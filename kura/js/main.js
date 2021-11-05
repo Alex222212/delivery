@@ -6,8 +6,7 @@ const InputLogin = document.getElementById('login')
 const InputPassword = document.getElementById('password')
 const buttonOut = document.querySelector('.button-out')
 const userName = document.querySelector('.user-name')
-const buttonLogin = document.querySelector('.button-login')
-
+const wrongLogin = document.querySelector('.wrong_login')
 const login = (user) => {
     userName.style.display = "block";
     userName.textContent = user.login
@@ -36,7 +35,7 @@ login: InputLogin.value,
 password: InputPassword.value
  }
  if(user.login == ''){
-     window.alert('Введите логин!');
+    wrongLogin.style.display= 'flex'
  } else {
  login(user);
  localStorage.setItem('user', JSON.stringify(user));

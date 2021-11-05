@@ -838,3 +838,8 @@ button {
         margin-right: 0;
     }
 }
+.wrong_login{
+    display: none;
+    color: red;
+    margin-right: 50px;
+}
